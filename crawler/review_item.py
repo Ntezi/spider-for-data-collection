@@ -6,3 +6,4 @@ class ReviewItem(scrapy.Item):
     review = scrapy.Field()
     date = scrapy.Field()
     user = scrapy.Field()
+    company_name = scrapy.Field()
