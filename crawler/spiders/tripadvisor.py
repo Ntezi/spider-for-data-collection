@@ -3,37 +3,36 @@ import re
 
 import scrapy
 
-from crawler.UrlHelper import UrlHelper
-from crawler.listing_item import ListingItem
-from crawler.review_item import ReviewItem
-
 
 class TripadvisorSpider(scrapy.Spider):
     name = 'tripadvisor'
     allowed_domains = ['tripadvisor.com']
-    urls = UrlHelper.urls
-    start_urls = urls
+    # start_urls = ['https://www.tripadvisor.com/Hotels-g3685401-Northern_Province-Hotels.html']
+    # start_urls = ['https://www.tripadvisor.com/Hotels-g3685404-Western_Province-Hotels.html']
+    # start_urls = ['https://www.tripadvisor.com/Hotels-g3685403-Southern_Province-Hotels.html']
+    # start_urls = ['https://www.tripadvisor.com/Hotels-g3685402-Eastern_Province-Hotels.html']
+
+
+    # start_urls = ['https://www.tripadvisor.com/Restaurants-g293829-Kigali_Kigali_Province.html']
+
+    start_urls = ['https://www.tripadvisor.com/Attractions-g293829-Activities-Kigali_Kigali_Province.html']
 
     def parse(self, response):
         self.log('I just visited: ' + response.url)
-        company_name = response.css('h1.ui_header::text').extract_first()
-
-        for review in response.css('div.review-container'):
-            review_item = ReviewItem()
-            review_item['title'] = review.css('span.noQuotes::text').extract_first()
-            review_item['review'] = review.css('p.partial_entry::text').extract_first()
-            review_item['date'] = review.css('span.ratingDate::attr(title)').extract_first()
-            review_item['user'] = review.css('div.info_text > div::text').extract_first()
-            review_item['company_name'] = company_name
-
-            yield review_item
+        for listing in response.css('div.listing'):
+            item = {
+                # 'name': listing.css('div.listing_title > a::text').extract_first(),
+                # 'url': 'https://www.tripadvisor.com' + listing.css('a.property_title::attr(href)').extract_first()
+                'url': 'https://www.tripadvisor.com' + listing.css('div.listing_title > a::attr(href)').extract_first()
+            }
+            yield item
 
         # follow pagination link
         url = response.url
-        if not re.findall(r'or\d', url):
-            next_page = re.sub(r'(-Reviews-)', r'\g<1>or5-', url)
+        if not re.findall(r'oa\d+', url):
+            next_page = re.sub(r'(-g293829-)', r'\g<1>oa30-', url)
         else:
-            page_number = int(re.findall(r'or(\d+)-', url)[0])
-            page_number_next = page_number + 5
-            next_page = url.replace('or' + str(page_number), 'or' + str(page_number_next))
+            page_number = int(re.findall(r'oa(\d+)-', url)[0])
+            page_number_next = page_number + 30
+            next_page = url.replace('oa' + str(page_number), 'oa' + str(page_number_next))
         yield scrapy.Request(next_page, meta={'dont_redirect': True}, callback=self.parse)
