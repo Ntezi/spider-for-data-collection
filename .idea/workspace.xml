@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4a79ca8-5fff-4185-bc5a-df529f441c82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/spiders/tripadvisor_hotel_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/spiders/tripadvisor_hotel_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,14 +16,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler/spiders/tripadvisor_hotel_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="123">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/tripadvisor_restaurant_reviews_data.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-95394" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
             </state>
           </provider>
         </entry>
@@ -47,7 +62,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tripadvisor_restaurant_reviews_data.csv">
+        <entry file="file://$PROJECT_DIR$/data/tripadvisor_restaurant_reviews_data.csv">
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" rowLines="3" />
           </provider>
@@ -133,6 +148,7 @@
         <option value="$PROJECT_DIR$/crawler/UrlHelper.py" />
         <option value="$PROJECT_DIR$/tripadvisor_to_do_reviews_data.json" />
         <option value="$PROJECT_DIR$/crawler/spiders/tripadvisor_hotel_spider.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -155,17 +171,6 @@
               <item name="Spider" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spider" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Spider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -181,10 +186,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
@@ -267,15 +272,16 @@
       <option name="presentableId" value="Default" />
       <updated>1541055077059</updated>
       <workItem from="1543043996075" duration="461000" />
-      <workItem from="1543370898609" duration="184000" />
+      <workItem from="1543370898609" duration="895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="645000" />
+    <option name="totallyTimeSpent" value="1356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="738" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info auto_hide="true" content_ui="combo" id="Project" order="0" weight="0.2536349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24959612" />
@@ -292,7 +298,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" auto_hide="true" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.7043344" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32817337" />
-      <window_info active="true" anchor="bottom" auto_hide="true" id="Terminal" order="12" sideWeight="0.49919224" visible="true" weight="0.7043344" />
+      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="12" sideWeight="0.49919224" weight="0.7043344" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -494,7 +500,7 @@
     <entry file="file://$PROJECT_DIR$/crawler/spiders/tripadvisor_reviews.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tripadvisor_restaurant_reviews_data.csv">
+    <entry file="file://$PROJECT_DIR$/data/tripadvisor_restaurant_reviews_data.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
@@ -506,11 +512,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crawler/spiders/tripadvisor_hotel_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="123">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/tripadvisor_restaurant_reviews_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
