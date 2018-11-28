@@ -11,8 +11,8 @@ class TripadvisorHotelSpiderSpider(scrapy.Spider):
     name = 'tripadvisor_hotel_spider'
     allowed_domains = ['tripadvisor.com']
     # urls = UrlHelper.hotel_urls
-    # urls = UrlHelper.restaurant_urls
-    urls = UrlHelper.to_do_urls
+    urls = UrlHelper.restaurant_urls
+    # urls = UrlHelper.to_do_urls
     start_urls = urls
 
     def parse(self, response):
