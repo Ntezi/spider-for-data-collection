@@ -4,6 +4,5 @@ This is a prototype of the spider that aims to collect text data across the www 
 
 Feel free to contribute...
 
-# ----------------------------------
 
 Inspired by https://learn.scrapinghub.com/scrapy/
